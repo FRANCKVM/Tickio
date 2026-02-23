@@ -1,0 +1,73 @@
+.ticket-selector-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.zone-info .zone-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+.zone-info .zone-availability {
+  font-size: 0.85rem;
+  color: #64748b;
+  display: block;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.quantity-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.quantity-controls .quantity-display {
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.price-info .price-display {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  min-width: 80px;
+  text-align: right;
+}
+
+.add-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add-button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}

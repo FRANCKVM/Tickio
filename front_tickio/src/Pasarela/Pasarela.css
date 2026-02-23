@@ -1,0 +1,155 @@
+.pasarela-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+}
+
+.pasarela-main-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.pasarela-sidebar {
+  flex: 1;
+  min-width: 300px;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pasarela-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+/* --- Formularios de Propietarios --- */
+.ticket-forms-section p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-form-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.ticket-form-header {
+  background: #f8fafc;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.1rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.form-fields input {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* --- Formulario de Pago --- */
+.payment-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.payment-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+.payment-method-selector {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+.expiry-group { flex: 2; }
+.cvv-group { flex: 1; }
+
+.payment-error {
+  color: #ef4444;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pay-button {
+  width: 100%;
+  background-color: #16a34a; /* Verde para Pagar */
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+.pay-button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* --- Resumen (Sidebar) --- */
+.pasarela-summary-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* (El componente CartSummary.css se encargará del resto) */
